@@ -48,8 +48,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/smartchef.git
-   cd smartchef
+   git clone https://github.com/Pavanshub/SmartChefAi.git
+   cd SmartChefAi
    ```
 
 2. **Install dependencies**
