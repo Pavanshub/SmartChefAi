@@ -7,12 +7,12 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![OpenRouter](https://img.shields.io/badge/OpenRouter-AI-purple?style=flat-square)](https://openrouter.ai/)
 
-SmartChef is a modern, AI-powered recipe generator that helps you create amazing dishes from whatever ingredients you have on hand. Whether you're looking to reduce food waste, try new combinations, or just need cooking inspiration, SmartChef has you covered.
+### SmartChef is a modern, AI-powered recipe generator that helps you create amazing dishes from whatever ingredients you have on hand. Whether you're looking to reduce food waste, try new combinations, or just need cooking inspiration, SmartChef has you covered.
 
 ## ✨ Features
 
 ### 🤖 AI-Powered Recipe Generation
-- **Advanced AI Integration**: Uses OpenRouter API with Claude 3.5 Sonnet for intelligent recipe creation
+- **Advanced AI Integration**: Uses OpenRouter API with Google Gemini for intelligent recipe creation
 - **Creative Combinations**: Generates unique recipes you might never have thought of
 - **Contextual Understanding**: AI considers cooking techniques, flavor profiles, and ingredient compatibility
 
@@ -158,7 +158,7 @@ smartchef/
 
 ### Backend & AI
 - **[OpenRouter API](https://openrouter.ai/)**: Access to multiple AI models
-- **[Claude 3.5 Sonnet](https://www.anthropic.com/)**: Advanced language model for recipe generation
+- **[Google Gemini](https://aistudio.google.com/apikey)**: Advanced language model for recipe generation
 - **Next.js API Routes**: Serverless API endpoints
 
 ### Development Tools
@@ -226,7 +226,7 @@ SmartChef is built mobile-first and provides an excellent experience across all 
 #### Changing AI Models
 Edit `lib/openrouter.ts` to use different models:
 ```typescript
-model: 'anthropic/claude-3.5-sonnet', // Change this line
+model: 'google/gemma-3n-e4b-it:free', // Change this line
 ```
 
 #### Modifying Color Themes
@@ -259,45 +259,6 @@ Update the select options in `components/ingredient-form.tsx`:
    - Import your GitHub repository
    - Add environment variables in the Vercel dashboard
    - Deploy!
-
-### Netlify
-
-1. **Build the project**
-   ```bash
-   npm run build
-   ```
-
-2. **Deploy to Netlify**
-   - Drag and drop the `out` folder to Netlify
-   - Or connect your GitHub repository
-   - Add environment variables in Netlify settings
-
-### Docker
-
-```dockerfile
-FROM node:18-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci --only=production
-COPY . .
-RUN npm run build
-EXPOSE 3000
-CMD ["npm", "start"]
-```
-
-## 🧪 Testing
-
-### Running Tests
-```bash
-npm run test          # Run all tests
-npm run test:watch    # Run tests in watch mode
-npm run test:coverage # Run tests with coverage
-```
-
-### Type Checking
-```bash
-npm run type-check    # Check TypeScript types
-```
 
 ### Linting
 ```bash
@@ -377,7 +338,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - **[OpenRouter](https://openrouter.ai/)** for providing access to state-of-the-art AI models
-- **[Anthropic](https://www.anthropic.com/)** for the amazing Claude 3.5 Sonnet model
+- **[Gemini](https://aistudio.google.com/apikey)** for the amazing Gemini model
 - **[shadcn](https://ui.shadcn.com/)** for the beautiful, accessible UI component library
 - **[Vercel](https://vercel.com/)** for the excellent Next.js framework and hosting platform
 - **[Tailwind CSS](https://tailwindcss.com/)** for the utility-first CSS framework
@@ -396,5 +357,4 @@ Need help? Here are your options:
 
 **Happy Cooking!** 👨‍🍳✨
 
-*Made with ❤️ by developers who love good food and great code*#   S m a r t C h e f A i  
- 
+*Made with ❤️ by developers who love good food and great code*#
